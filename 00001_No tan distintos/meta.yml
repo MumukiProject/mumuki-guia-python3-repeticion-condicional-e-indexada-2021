@@ -10,6 +10,10 @@ manual_evaluation: false
 progressive_expectations: false
 choices: []
 goal:
-  kind: last_query_outputs
-  output: "'cantó'"
+  kind: queries_match
+  regexps:
+  - ^\"Del árbol\"\s*\+\s*\" una hoja se cayó\"\s*$
+  - ^\"Sin brújula y sin radio\"\s*\[\s*4\s*\]\s*$
+  - "^\\[\\s*1\\s*\\,\\s*4\\s*\\]\\s*\\+\\s*\\[\\s*4\\s*\\,\\s*5\\s*\\]\\s*$"
+  - ^\[\s*\"el\"\s*\,\s*\"carozo\"\s*\,\s*\"cantó\"\s*\]\s*\[\s*2\s*\]\s*$
 name: No tan distintos
